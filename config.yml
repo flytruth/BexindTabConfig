@@ -1,0 +1,267 @@
+# ============================================================
+#  TAB — BexindStudio 
+#  Configuration created for the BexindStudio project
+#  Our Telegram: @bexindstudio 
+#  Order a project: @bexindstudio_bot 
+#  Support: @BexindDev
+#  If something doesn't work — check your placeholders and TAB version
+# ============================================================
+
+header-footer:
+  enabled: true
+  header:
+    - "&x&a&6&f&f&2&5&l◀ &x&a&6&f&f&2&5&lʙ&x&a&6&f&f&2&5&lᴇ&x&a&6&f&f&2&5&lx&x&a&6&f&f&2&5&lɪ&x&a&6&f&f&2&5&lɴ&x&a&6&f&f&2&5&lᴅ&x&a&6&f&f&2&5&ls&x&a&6&f&f&2&5&lᴛ&x&a&6&f&f&2&5&lᴜ&x&a&6&f&f&2&5&lᴅ&x&a&6&f&f&2&5&lɪ&x&a&6&f&f&2&5&lᴏ &x&a&6&f&f&2&5&l▶"
+    - ""
+    - "&#D5DBDDYou are part of the &x&a&6&f&f&2&5BexindStudio&#D5DBDD team!"
+    - ""
+    - "&#D5DBDDPlayers online: "
+  footer:
+    - ""
+    - "&#D5DBDDYour ping: &x&a&6&f&f&2&5%ping% ᴍꜱ"
+    - "&#D5DBDDServer TPS: &x&a&6&f&f&2&5%server_tps_15_colored%"
+    - ""
+    - "&#D5DBDDWebsite: &x&a&6&f&f&2&5ʙ&x&a&6&f&f&2&5ᴇ&x&a&6&f&f&2&5x&x&a&6&f&f&2&5ɪ&x&a&6&f&f&2&5ɴ&x&a&6&f&f&2&5ᴅ&x&a&6&f&f&2&5s&x&a&6&f&f&2&5ᴛ&x&a&6&f&f&2&5ᴜ&x&a&6&f&f&2&5ᴅ&x&a&6&f&f&2&5ɪ&x&a&6&f&f&2&5ᴏ&x&a&6&f&f&2&5.&x&a&6&f&f&2&5ʀ&x&a&6&f&f&2&5ᴜ"
+    - "&7    &#D5DBDDVKontakte: &x&2&5&9&7&f&fᴠ&x&2&5&9&7&f&fᴋ&x&2&5&9&7&f&f.&x&2&5&9&7&f&fᴄ&x&2&5&9&7&f&fᴏ&x&2&5&9&7&f&fᴍ&x&2&5&9&7&f&f/&x&2&5&9&7&f&fʙ&x&2&5&9&7&f&fᴇ&x&2&5&9&7&f&fx&x&2&5&9&7&f&fɪ&x&2&5&9&7&f&fɴ&x&2&5&9&7&f&fᴅ&x&2&5&9&7&f&fs&x&2&5&9&7&f&fᴛ&x&2&5&9&7&f&fᴜ&x&2&5&9&7&f&fᴅ&x&2&5&9&7&f&fɪ&x&2&5&9&7&f&fᴏ   &7"
+    - ""
+  disable-condition: '%world%=disabledworld'
+  per-world:
+    world1:
+      header:
+        - "Welcome to the world &x&a&6&f&f&2&5BexindStudio"
+      footer:
+        - "Have a nice game!"
+    world2;world3:
+      header:
+        - "Shared header for"
+        - "world2 and world3"
+  per-server:
+    server1:
+      header:
+        - "Custom header for server1"
+
+tablist-name-formatting:
+  enabled: true
+  anti-override: true
+  disable-condition: '%world%=disabledworld'
+
+scoreboard-teams:
+  enabled: true
+  enable-collision: true
+  invisible-nametags: false
+  anti-override: true
+  sorting-types:
+    - "GROUPS:owner,admin,glhelper,sthelper,helper,dhelper,mlhelper,master,laymer,infinity,klaster,default"
+    - "PLACEHOLDER_A_TO_Z:%player%"
+  case-sensitive-sorting: true
+  can-see-friendly-invisibles: false
+  disable-condition: '%world%=disabledworld'
+
+playerlist-objective:
+  enabled: true
+  value: "%ping%"
+  fancy-value: "&7Ping: %ping%"
+  title: "BexindStudio"   # visible only on Bedrock
+  render-type: INTEGER
+  disable-condition: '%world%=disabledworld'
+
+belowname-objective:
+  enabled: false
+  value: "%health%"
+  title: "&cHealth"
+  fancy-value: "&c%health%"
+  fancy-value-default: "NPC"
+  disable-condition: '%world%=disabledworld'
+
+prevent-spectator-effect:
+  enabled: false
+
+bossbar:
+  enabled: false
+  toggle-command: /bossbar
+  remember-toggle-choice: false
+  hidden-by-default: false
+  bars:
+    ServerInfo:
+      style: "PROGRESS"
+      color: "%animation:barcolors%"
+      progress: "100"
+      text: "&fWebsite: &bBexindStudio.ru"
+
+scoreboard:
+  enabled: true
+  toggle-command: /sb
+  remember-toggle-choice: false
+  hidden-by-default: false
+  use-numbers: true
+  static-number: 0
+  delay-on-join-milliseconds: 0
+  scoreboards:
+    scoreboard-1.20.3+:
+      title: "&x&a&6&f&f&2&5&l◀ &x&a&6&f&f&2&5&lʙ&x&a&6&f&f&2&5&lᴇ&x&a&6&f&f&2&5&lx&x&a&6&f&f&2&5&lɪ&x&a&6&f&f&2&5&lɴ&x&a&6&f&f&2&5&lᴅ&x&a&6&f&f&2&5&ls&x&a&6&f&f&2&5&lᴛ&x&a&6&f&f&2&5&lᴜ&x&a&6&f&f&2&5&lᴅ&x&a&6&f&f&2&5&lɪ&x&a&6&f&f&2&5&lᴏ &x&a&6&f&f&2&5&l▶"
+      display-condition: "%player-version-id%>=765;%bedrock%=false"
+      lines:
+        - "      &7⌚ %server_time_MM%/%server_time_dd% %server_time_HH%:%server_time_mm%"
+        - ""
+        - " &x&a&6&f&f&2&5&l╭&#D5DBDD Nickname: &x&a&6&f&f&2&5%player_name%"
+        - " &x&a&6&f&f&2&5|&#D5DBDD Group: %vault_prefix%"
+        - " &x&a&6&f&f&2&5&l╰&#D5DBDD Title: %vault_suffix%"
+        - ""
+        - " &x&a&6&f&f&2&5● &#D5DBDDRubles: &x&a&6&f&f&2&5%playerpoints_points%"
+        - " &x&a&6&f&f&2&5● &#D5DBDDKills: &a%statistic_player_kills%⚔"
+        - " &x&a&6&f&f&2&5● &#D5DBDDDeaths: &c%statistic_deaths%☠"
+        - ""
+        - "&7  &x&a&6&f&f&2&5ʙ&x&a&6&f&f&2&5ᴇ&x&a&6&f&f&2&5x&x&a&6&f&f&2&5ɪ&x&a&6&f&f&2&5ɴ&x&a&6&f&f&2&5ᴅ&x&a&6&f&f&2&5s&x&a&6&f&f&2&5ᴛ&x&a&6&f&f&2&5ᴜ&x&a&6&f&f&2&5ᴅ&x&a&6&f&f&2&5ɪ&x&a&6&f&f&2&5ᴏ&x&a&6&f&f&2&5.&x&a&6&f&f&2&5ʀ&x&a&6&f&f&2&5ᴜ  &7"
+        - ""
+    scoreboard:
+      title: "&x&a&6&f&f&2&5&l◀ &x&a&6&f&f&2&5&lʙ&x&a&6&f&f&2&5&lᴇ&x&a&6&f&f&2&5&lx&x&a&6&f&f&2&5&lɪ&x&a&6&f&f&2&5&lɴ&x&a&6&f&f&2&5&lᴅ&x&a&6&f&f&2&5&ls&x&a&6&f&f&2&5&lᴛ&x&a&6&f&f&2&5&lᴜ&x&a&6&f&f&2&5&lᴅ&x&a&6&f&f&2&5&lɪ&x&a&6&f&f&2&5&lᴏ &x&a&6&f&f&2&5&l▶"
+      lines:
+        - "      &7⌚ %server_time_MM%/%server_time_dd% %server_time_HH%:%server_time_mm%"
+        - ""
+        - " &x&a&6&f&f&2&5&l╭&#D5DBDD Nickname: &x&a&6&f&f&2&5%player_name%"
+        - " &x&a&6&f&f&2&5|&#D5DBDD Group: %vault_prefix%"
+        - " &x&a&6&f&f&2&5&l╰&#D5DBDD Title: %vault_suffix%"
+        - ""
+        - " &x&a&6&f&f&2&5● &#D5DBDDRubles: &x&a&6&f&f&2&5%playerpoints_points%"
+        - " &x&a&6&f&f&2&5● &#D5DBDDKills: &a%statistic_player_kills%⚔"
+        - " &x&a&6&f&f&2&5● &#D5DBDDDeaths: &c%statistic_deaths%☠"
+        - ""
+        - "&7  &x&a&6&f&f&2&5ʙ&x&a&6&f&f&2&5ᴇ&x&a&6&f&f&2&5x&x&a&6&f&f&2&5ɪ&x&a&6&f&f&2&5ɴ&x&a&6&f&f&2&5ᴅ&x&a&6&f&f&2&5s&x&a&6&f&f&2&5ᴛ&x&a&6&f&f&2&5ᴜ&x&a&6&f&f&2&5ᴅ&x&a&6&f&f&2&5ɪ&x&a&6&f&f&2&5ᴏ&x&a&6&f&f&2&5.&x&a&6&f&f&2&5ʀ&x&a&6&f&f&2&5ᴜ  &7"
+        - ""
+
+layout:
+  enabled: false
+  direction: COLUMNS
+  default-skin: mineskin:383747683
+  enable-remaining-players-text: true
+  remaining-players-text: '... and %s more'
+  empty-slot-ping-value: 1000
+  layouts:
+    default:
+      fixed-slots:
+        - '1|&3Website&f:'
+        - '2|&bBexindStudio.ru'
+        - '3|&8&m                       '
+        - '4|&3Nickname&f:'
+        - '5|&b%player%'
+        - '7|&3Role&f:'
+        - '8|&b%group%'
+        - '10|&3World&f:'
+        - '11|&b%world%'
+        - '13|&3Time&f:'
+        - '14|&b%time%'
+        - '21|&3Discord&f:'
+        - '22|&bdiscord.gg/bexindstudio'
+        - '23|&8&m                       '
+        - '41|&3Store&f:'
+        - '42|&bshop.bexindstudio.ru'
+        - '43|&8&m                       '
+      groups:
+        staff:
+          condition: permission:tab.staff
+          slots:
+            - 24-40
+        players:
+          slots:
+            - 44-80
+
+ping-spoof:
+  enabled: false
+  value: 0
+
+placeholders:
+  date-format: "dd.MM.yyyy"
+  time-format: "[HH:mm:ss / h:mm a]"
+  time-offset: 0
+  register-tab-expansion: false
+
+
+placeholder-output-replacements:
+  "%essentials_vanished%":
+    "yes": "&7| Vanished"
+    "no": ""
+
+conditions:
+  nick:
+    conditions:
+      - "%player%=%essentials_nickname%"
+    yes: "%player%"
+    no: "~%essentials_nickname%"
+
+placeholder-refresh-intervals:
+  default-refresh-interval: 500
+  "%server_uptime%": 1000
+  "%server_tps_1_colored%": 1000
+  "%server_unique_joins%": 5000
+  "%player_health%": 200
+  "%player_ping%": 1000
+  "%vault_prefix%": 1000
+  "%rel_factionsuuid_relation_color%": 1000
+
+assign-groups-by-permissions: false
+primary-group-finding-list:
+  - Owner
+  - Admin
+  - Mod
+  - Helper
+  - default
+
+permission-refresh-interval: 1000
+debug: false
+
+mysql:
+  enabled: false
+  host: 127.0.0.1
+  port: 3306
+  database: tab
+  username: user
+  password: password
+  useSSL: true
+
+# ---------- PROXY SUPPORT ----------
+proxy-support:
+  enabled: true
+  type: PLUGIN
+  plugin:
+    name: RedisBungee
+  redis:
+    url: 'redis://:password@localhost:6379/0'
+  rabbitmq:
+    exchange: 'plugin'
+    url: 'amqp://guest:guest@localhost:5672/%2F'
+
+#  BUKKIT ONLY
+
+per-world-playerlist:
+  enabled: false
+  allow-bypass-permission: false
+  ignore-effect-in-worlds:
+    - ignoredworld
+    - build
+  shared-playerlist-world-groups:
+    lobby:
+      - lobby1
+      - lobby2
+    minigames:
+      - paintball
+      - bedwars
+
+compensate-for-packetevents-bug: false
+global-playerlist:
+  enabled: false
+  display-others-as-spectators: false
+  display-vanished-players-as-spectators: true
+  isolate-unlisted-servers: false
+  update-latency: false
+  spy-servers:
+    - spyserver1
+    - spyserver2
+  server-groups:
+    lobbies:
+      - lobby1
+      - lobby2
+    group2:
+      - server1
+      - server2
+
+use-bukkit-permissions-manager: false
+use-online-uuid-in-tablist: true
